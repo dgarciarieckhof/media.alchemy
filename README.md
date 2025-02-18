@@ -18,8 +18,9 @@ uv sync
 ```
 
 ## Integrations
-- **ColumbusAI**: A Gradio app for YouTube exploration that allows you to interact with videos, download them, generate reports, and chat with them.  
-  👉 Check out the [demo](https://www.youtube.com/watch?v=WyYV0tILzu0).
+- **ColumbusAI**: A Gradio app for YouTube exploration that allows you to interact with videos, download them, generate reports, and chat with them. <br> 
+    👉 Check out the [demo](https://www.youtube.com/watch?v=WyYV0tILzu0).
+
 
 ## Misc
 - Using cuda 12.4 and cuDNN9.
