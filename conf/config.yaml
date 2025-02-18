@@ -1,0 +1,15 @@
+whisper:
+  best_of: 5
+  patience: 5
+  batch_size: 16
+  temperature: 0
+  word_timestamps: True
+
+model:
+  whisper: small
+  ctc: facebook/wav2vec2-base-960h
+  diarization: pyannote/speaker-diarization-3.1
+
+llm:
+  base_url: https://openrouter.ai/api/v1
+  gemini: google/gemini-2.0-flash-exp:free
