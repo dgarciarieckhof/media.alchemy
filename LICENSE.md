@@ -37,6 +37,6 @@ If You wish to use the Work for **commercial purposes**, You must obtain a **sep
 
 ---
 
-Copyright (C) [2025] [Diego Garcia Rieckhof]
+Copyright (C) 2025, Diego Garcia Rieckhof
 
 Licensed under the Apache License 2.0 (Modified for Non-Commercial Use).
