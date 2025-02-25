@@ -64,6 +64,20 @@ def convert_to_script(df):
         script += f"[{start_time} - {end_time}]\n{row['text']}\n\n"
     return script
 
+def convert_to_script_with_speaker(transcript_df):
+    """Convert a DataFrame into a movie script format with timestamps and speaker."""
+    script = ""
+    
+    for _, row in transcript_df.iterrows():
+        speaker = row['speaker']
+        start_time = format_duration(row['start'])
+        end_time = format_duration(row['end'])
+        sentence = row['sentence']
+        
+        script += f"[{start_time} - {end_time}] {speaker}: {sentence}\n\n"
+    
+    return script
+
 def markdown_to_pdf(report, output_dir, output_filename="report.pdf"):
     """Convert Markdown text to a well-styled PDF using ReportLab."""
     output_filename = os.path.join(output_dir, output_filename)

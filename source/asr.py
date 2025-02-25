@@ -317,9 +317,13 @@ def speaker_diarization(model_diar, HF_TOKEN, audio_file, transcript, device="cu
 
     # Perform diarization
     logging.info("Running diarization...")
+    torch.cuda.synchronize()
     diarize_segments = pipeline(audio_file)
-    
+    logging.info("Diarization done!")
+    torch.cuda.synchronize()
+
     # Convert to DataFrame
+    logging.info("Wrangling...")
     diarize_segments = pd.DataFrame(
         diarize_segments.itertracks(yield_label=True), 
         columns=['segment', 'label', 'speaker']
