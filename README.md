@@ -1,5 +1,5 @@
 # Media Alchemy
-Media Alchemy is a hands-on toolkit for exploring and building Automatic Speech Recognition (ASR) systems. It provides practical tools to experiment with CTC alignment, speech-to-text conversion, speaker diarization, and LLM-enhanced interactions. This repository helps organize my learning about these models and methods.
+Media Alchemy is a hands-on toolkit for exploring and building systems that deal with multiple types of inputs. It provides practical tools to experiment with CTC alignment, speech-to-text conversion, speaker diarization, and LLM-enhanced interactions. This repository helps organize my learning about these models and methods.
 
 ## Features
 - **Speech-to-Text (STT)** – Convert spoken language into text using pre-trained or fine-tuned ASR models.
