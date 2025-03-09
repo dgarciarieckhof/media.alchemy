@@ -1,4 +1,5 @@
 from openai import OpenAI
+
 def gen_llm_description(client, title, description, llm):
     """
     Generates a description for a youtube video based on title and description provided

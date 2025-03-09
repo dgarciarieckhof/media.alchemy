@@ -24,7 +24,27 @@ def load_json(file_path):
     """Load JSON file and return its contents as a dictionary."""
     with open(file_path, 'r', encoding='utf-8') as file:
         return json.load(file)
-    
+
+def write_txt_file(text_file:str, script:str):
+    """Save script as txt file."""
+    with open(text_file, "w", encoding="utf-8") as file:
+        file.write(script)
+
+def save_json(data, filename):
+    """
+    Saves a dictionary as a JSON file.
+    """
+    try:
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
+        print(f"JSON saved successfully to {filename}")
+    except Exception as e:
+        print(f"Error saving JSON: {e}")
+
+def read_txt_file(text_file: str) -> str:
+    """Read content from a text file and return as a string."""
+    with open(text_file, "r", encoding="utf-8") as file:
+        return file.read()
 
 # ============
 # Utils
